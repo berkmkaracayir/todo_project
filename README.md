@@ -12,7 +12,6 @@ A simple Todo application built with Django. This application allows users to cr
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py createsuperuser
-
-- Run: python manage.py runserver
+- python manage.py runserver
 
 Visit http://127.0.0.1:8000/ to see your To-Do list.
