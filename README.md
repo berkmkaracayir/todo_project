@@ -9,14 +9,10 @@ A simple Todo application built with Django. This application allows users to cr
 
 ### Migrate and Run the Server
 
-- 1-Run migrations to create the database:
-**python manage.py makemigrations**
-**python manage.py migrate**
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py createsuperuser
 
-- 2-Create a superuser to access the admin interface:
-**python manage.py createsuperuser**
-
-- 3-Run the development server:
-**python manage.py runserver**
+- Run: python manage.py runserver
 
 Visit http://127.0.0.1:8000/ to see your To-Do list.
