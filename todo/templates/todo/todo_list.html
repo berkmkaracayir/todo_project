@@ -1,0 +1,24 @@
+<!-- todo/templates/todo/todo_list.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="{% static 'todo/styles.css' %}">
+</head>
+<body>
+    <h1>To-Do</h1>
+    <ul>
+        {% for item in items %}
+            <li>
+                {{ item.title }} 
+                <a href="{% url 'edit_todo' item.id %}">Edit</a>
+                <a href="{% url 'delete_todo' item.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_todo' %}">Add Task</a>
+</body>
+</html>
